@@ -1,0 +1,3 @@
+const determineTimeOfDay = () => { };
+
+export { determineTimeOfDay };
