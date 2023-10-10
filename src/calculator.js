@@ -2,6 +2,9 @@ const multiplication = (x, y) => {
   let result = 0;
   // code
 
+  result = x * y;
+  return result;
+
   //
   return result;
 }
