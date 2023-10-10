@@ -3,7 +3,6 @@ const multiplication = (x, y) => {
   // code
 
   result = x * y;
-  
   return result;
 
   //
@@ -13,7 +12,10 @@ const multiplication = (x, y) => {
 const calculateAverage = (value1, value2, value3, value4, value5) => {
   // code
 
+  const result = (value1 + value2 + value3 + value4 + value5) / 5;
+  return result;
+
   //
-}
+};
 
 export { multiplication, calculateAverage };
