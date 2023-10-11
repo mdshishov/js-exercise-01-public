@@ -3,7 +3,6 @@ const multiplication = (x, y) => {
   // code
 
   result = x * y;
-  return result;
 
   //
   return result;

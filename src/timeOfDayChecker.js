@@ -1,20 +1,17 @@
 const determineTimeOfDay = (time) => {
-    if ((time >=0 ) && (time <= 23)) {
-        if ((time >= 6) && (time < 12)) {
-            return 'утро';
-        }
-        if ((time >= 12) && (time < 18)) {
-            return 'день';
-        }
-        if ((time >= 18) && (time < 22)) {
-            return 'вечер';
-        }
-        if ((time >= 22) || (time < 6)) {
-            return 'ночь';
-        }
+  if ((time >=0 ) && (time <= 23)) {
+    if ((time < 6) || (time >= 22)) {
+      return 'ночь';
+    } else if (time < 12) {
+      return 'утро';
+    } else if (time < 18) {
+      return 'день';
     } else {
-        return 'ошибка данных';
+      return 'вечер';
     }
+  }
+    
+  return 'ошибка данных';
 };
 
 export { determineTimeOfDay };
